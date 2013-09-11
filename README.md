@@ -1,6 +1,6 @@
-#FlickCatz
+#FlickrCatz
 - - -
-FlickCatz is a tool to upload image/video with flickr , multi thread & yaml settings & logger supported , set a UPLOAD_ROOT_PATH and subfolders be photosets , add a prefix filename when image/video is uploaded
+FlickrCatz is a tool to upload image/video with flickr , multi thread & yaml settings & logger supported , set a UPLOAD_ROOT_PATH and subfolders be photosets , add a prefix filename when image/video is uploaded
 
 use default Flickr API key is named FlickrCatz
 
