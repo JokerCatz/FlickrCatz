@@ -34,7 +34,7 @@ class FlickrCatz
     :api_secret    => "2103c83fddafdbb1",
 
     :auth_file     => 'flickr_catz_auth.yaml',
-    :thread_pool   => 4,
+    :thread_pool   => 6,
 
     :base_path     => nil,
     :filter        => "*",
@@ -79,7 +79,7 @@ class FlickrCatz
     
     Dir.glob("#{@settings[:base_path]}/*").sort.each do |upload_folder|
       upload_folder = upload_folder.gsub(/\/{2,}/,'/') # "//123////123//" => "/123/123/"
-      next if !File.directory?(upload_folder) || !upload_folder.match(/.*\/\d{8}.+/)
+      next if !File.directory?(upload_folder) || !upload_folder.match(/.*\/\d{4,8}.+/)
       upload_folder = File.basename(upload_folder)
       
       #find photo_set
